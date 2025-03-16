@@ -39,9 +39,7 @@ const page = () => {
                     </h1>
                     <div className="mt-8 flex justify-center lg:justify-start gap-4">
                         <Link href="/sign-in" className="border border-[#ffff] text-white z-50 py-3 px-8 rounded-lg mt-8 hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700 hover:border-[#FFD700] relative z-10">Se connecter</Link>
-                        <Link href="/sign-up" className="border border-[#ffff] text-white z-50 py-3 px-8 rounded-lg mt-8 hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700 hover:border-[#FFD700] ease-in-out relative z-10">
-                            S&apos;inscrire
-                        </Link>
+                        
                     </div>
                 </div>
                 <div className="lg:w-1/2 relative mt-12 lg:mt-0">
@@ -83,7 +81,7 @@ const page = () => {
             </section>
             <section className=" text-center section mt-36 flex flex-col justify-center items-center">
                 <div className="w-80 border border-yellow-200 rounded-lg">
-                <img src="/Nelly.jpg" alt="" className="w-100 h-80  rounded-lg shadow-lg " />
+                <img src="/nelly.jpg" alt="" className="w-100 h-80  rounded-lg shadow-lg " />
                 </div>
                 <h1 className="text-6xl font-extrabold text-white">Là où l&apos;Art de la Beauté Rencontre l&apos;Excellence</h1>
  

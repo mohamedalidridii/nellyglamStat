@@ -43,15 +43,7 @@ const Page = () => {
                 : 'Targeted treatments to address scars, stretch marks, and pigmentation with visible results. Each treatment is tailored to your unique needs. Your beauty, our mission.',
             duration: '75 mins',
         },
-        {
-            id: 6,
-            title: language === 'fr' ? 'Soins Spécifiques' : 'Specific Treatments',
-            subtitle: language === 'fr' ? 'Sur Mesure pour Vous' : 'Tailored for You',
-            description: language === 'fr'
-                ? 'Des soins ciblés pour traiter les cicatrices, vergetures et pigmentation avec des résultats visibles. Chaque soin est adapté à vos besoins uniques. Votre beauté, notre mission.'
-                : 'Targeted treatments to address scars, stretch marks, and pigmentation with visible results. Each treatment is tailored to your unique needs. Your beauty, our mission.',
-            duration: '75 mins',
-        },
+        
     ];
 
     return <div>
