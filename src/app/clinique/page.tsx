@@ -2,9 +2,43 @@ import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
-  return (
-    <div className="">
+    return (
+        <div className="">
+            <nav className="block w-full max-w-screen-lg px-4 py-2 mx-auto bg-opacity-90 sticky top-3 lg:px-8 lg:py-3 backdrop-blur-lg backdrop-saturate-150 z-[9999]">
+                <div className="container flex flex-wrap items-center justify-between mx-auto text-slate-800 blur-none">
+                    <Link href="#"
+                        className="mr-4 block cursor-pointer py-1.5 text-base text-slate-800 font-semibold">
+                        Material Tailwind
+                    </Link>
+                    <div className="hidden lg:block">
+                        <ul className="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+                            <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+                                <a href="#" className="flex items-center">Pages</a>
+                            </li>
+                            <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+                                <a href="#" className="flex items-center">Account</a>
+                            </li>
+                            <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+                                <a href="#" className="flex items-center">Blocks</a>
+                            </li>
+                            <li className="flex items-center p-1 text-sm gap-x-2 text-slate-600">
+                                <a href="#" className="flex items-center">Docs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button
+                        className="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+                        type="button">
+                        <span className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </nav>
             <section className="relative min-h-screen bg-black flex flex-col justify-center items-center text-center p-12">
+
                 <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center opacity-20">
                     <div className="w-[500px] h-[500px] bg-black-800 rounded-full"></div>
                 </div>
@@ -39,7 +73,7 @@ const page = () => {
                     </h1>
                     <div className="mt-8 flex justify-center lg:justify-start gap-4">
                         <Link href="/sign-in" className="border border-[#ffff] text-white z-50 py-3 px-8 rounded-lg mt-8 hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700 hover:border-[#FFD700] relative z-10">Se connecter</Link>
-                        
+
                     </div>
                 </div>
                 <div className="lg:w-1/2 relative mt-12 lg:mt-0">
@@ -74,17 +108,17 @@ const page = () => {
                 </div>
 
                 <div className="mt-8">
-                <Link href="/nosServices" className="border border-[#ffff] text-white z-50 py-3 px-8 rounded-lg mt-8 hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700 hover:border-[#FFD700] relative z-10">
-                            Nos Services
-                        </Link>
+                    <Link href="/nosServices" className="border border-[#ffff] text-white z-50 py-3 px-8 rounded-lg mt-8 hover:text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700 hover:border-[#FFD700] relative z-10">
+                        Nos Services
+                    </Link>
                 </div>
             </section>
             <section className=" text-center section mt-36 flex flex-col justify-center items-center">
                 <div className="w-80 border border-yellow-200 rounded-lg">
-                <img src="/nelly.jpg" alt="" className="w-100 h-80  rounded-lg shadow-lg " />
+                    <img src="/nelly.jpg" alt="" className="w-100 h-80  rounded-lg shadow-lg " />
                 </div>
                 <h1 className="text-6xl font-extrabold text-white">Là où l&apos;Art de la Beauté Rencontre l&apos;Excellence</h1>
- 
+
             </section>
 
 
@@ -124,7 +158,7 @@ const page = () => {
                 </div>
             </section>
         </div>
-  )
+    )
 }
 
 export default page
